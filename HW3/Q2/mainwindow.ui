@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>800</width><height>600</height></rect>
+  </property>
+  <property name="windowTitle"><string>Encryption Performance Comparison</string></property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+
+    <!-- The chart area -->
+    <item>
+     <widget class="QWidget" name="chartWidget" native="true">
+      <layout class="QVBoxLayout" name="chartLayoutContainer">
+       <item>
+        <layout class="QVBoxLayout" name="chartLayout"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <!-- A horizontal layout for our two buttons -->
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <item>
+       <widget class="QPushButton" name="startButton">
+        <property name="text"><string>Start Test</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exportButton">
+        <property name="text"><string>Export CSV</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+   </layout>
+  </widget>
+
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
